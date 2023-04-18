@@ -1,4 +1,5 @@
 import { api } from "./api.js";
+import { oneLoRa } from "./defaultGraph.js";
 
 export function $el(tag, propsOrChildren, children) {
 	const split = tag.split(".");
@@ -566,6 +567,11 @@ export class ComfyUI {
 			$el("button", { id: "comfy-load-default-button", textContent: "Load Default", onclick: () => {
 				if (!confirmClear.value || confirm("Load default workflow?")) {
 					app.loadGraphData()
+				}
+			}}),
+			$el("button", { id: "comfy-load-oneLoRa", textContent: "Load oneLoRa", onclick: () => {
+				if (!confirmClear.value || confirm("Load default workflow?")) {
+					app.loadGraphData(oneLoRa)
 				}
 			}}),
 		]);
