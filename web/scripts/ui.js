@@ -570,7 +570,7 @@ export class ComfyUI {
 				}
 			}}),
 			$el("button", { id: "comfy-load-oneLoRa", textContent: "Load oneLoRa", onclick: () => {
-				if (!confirmClear.value || confirm("Load default workflow?")) {
+				if (!confirmClear.value || confirm("Load one LoRa workflow?")) {
 					app.loadGraphData(oneLoRa)
 				}
 			}}),
