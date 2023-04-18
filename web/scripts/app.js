@@ -1,7 +1,7 @@
 import { ComfyWidgets } from "./widgets.js";
 import { ComfyUI, $el } from "./ui.js";
 import { api } from "./api.js";
-import { defaultGraph } from "./defaultGraph.js";
+import { defaultGraph, oneLoRa } from "./defaultGraph.js";
 import { getPngMetadata, importA1111 } from "./pnginfo.js";
 
 /** 
